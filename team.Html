@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antiko Team | عن الفريق</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .content-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(15px);
+            border-radius: 30px;
+            padding: 50px;
+            margin: 20px auto;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: right;
+        }
+
+        .content-card h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            color: var(--primary);
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.1);
+            text-shadow: 0 0 10px var(--primary-glow);
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <div class="overlay"></div>
+
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-right"></i></a>
+
+    <header>
+        <div class="logo-text staggered-entry">عن الفريق</div>
+        <div class="hero">
+            <h2 class="staggered-entry">تعرف على رؤية وقصة Antiko Team</h2>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content-card staggered-entry">
+            <h2>رؤيتنا</h2>
+            <p>نطمح في فريق Antiko أن نكون الرواد في تقديم حلول برمجية مبتكرة تجمع بين الإبداع الفني والتقنية المتطورة.
+                نحن نؤمن بأن البرمجة ليست مجرد كود، بل هي وسيلة لتحسين حياة الناس وتوفير أدوات ترفيهية وإنتاجية
+                استثنائية.</p>
+        </div>
+
+        <div class="content-card staggered-entry">
+            <h2>مهمتنا</h2>
+            <p>مهمتنا هي بناء مجتمع تقني متكامل، وتطوير منصات وأدوات (مثل بوت Antiko) تلبي احتياجات المستخدمين وتفوق
+                توقعاتهم. نحن نركز على الجودة، الاستدامة، وتجربة المستخدم السلسة.</p>
+        </div>
+
+        <div class="content-card staggered-entry">
+            <h2>قصتنا</h2>
+            <p>بدأ فريق Antiko كمجموعة صغيرة من المبرمجين الطموحين، وتحول اليوم إلى فريق متكامل يضم مواهب في مختلف
+                المجالات التقنية. نحن مستمرون في النمو والتطور، وشغفنا هو ما يدفعنا للأمام دائمًا.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Antiko Team. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

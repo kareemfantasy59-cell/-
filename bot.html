@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antiko Team | Antiko Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .feature-item {
+            display: flex;
+            align-items: center;
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: right;
+            transition: 0.3s;
+        }
+
+        .feature-item:hover {
+            transform: scale(1.02);
+            border-color: var(--primary);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            min-width: 60px;
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-left: 20px;
+        }
+
+        .feature-text h3 {
+            margin-bottom: 5px;
+            color: var(--primary);
+        }
+
+        .feature-text p {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            color: var(--primary);
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <div class="overlay"></div>
+
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-right"></i></a>
+
+    <header>
+        <div class="logo-text staggered-entry">ANTIKO BOT</div>
+        <div class="hero">
+            <h2 class="staggered-entry">أذكى وأقوى بوت واتساب لإدارة المجموعات والترفيه</h2>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="feature-item staggered-entry">
+            <div class="feature-icon"><i class="fas fa-gamepad"></i></div>
+            <div class="feature-text">
+                <h3>ألعاب ترفيهية متكاملة</h3>
+                <p>يحتوي البوت على مجموعة واسعة من الألعاب مثل (فكك، خمن، سؤال انمي، XO) مع نظام نقاط وتنافس.</p>
+            </div>
+        </div>
+
+        <div class="feature-item staggered-entry">
+            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="feature-text">
+                <h3>نظام حماية وإدارة</h3>
+                <p>إدارة المجموعات باحترافية، طرد المتطفلين، ترحيب تلقائي، وضبط القوانين بسهولة.</p>
+            </div>
+        </div>
+
+        <div class="feature-item staggered-entry">
+            <div class="feature-icon"><i class="fas fa-tools"></i></div>
+            <div class="feature-text">
+                <h3>أدوات ذكية</h3>
+                <p>تحويل الصور لملصقات، تحويل الفيديو لصوت، البحث في يوتيوب، ومعلومات الطقس والعملات.</p>
+            </div>
+        </div>
+
+        <div class="feature-item staggered-entry">
+            <div class="feature-icon"><i class="fas fa-university"></i></div>
+            <div class="feature-text">
+                <h3>نظام البنك والترتيب</h3>
+                <p>اجمع النقاط، حوّل الأموال للاعبين الآخرين، ونافس لتكون الأول في قائمة الصدارة العالمية.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Antiko Team. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
