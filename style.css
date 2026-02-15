@@ -46,33 +46,9 @@ body {
     z-index: 0;
 }
 
-#bg-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('bg.png') center/cover no-repeat;
-    opacity: 0.8;
-    /* Increased opacity for better visibility */
-    z-index: -2;
-    /* Ahead of canvas, behind everything else */
-    animation: bgMovement 15s ease-in-out infinite alternate;
-}
+/* Background background effects focused on canvas now */
 
-@keyframes bgMovement {
-    0% {
-        transform: scale(1) translate(0, 0);
-    }
-
-    50% {
-        transform: scale(1.1) translate(-2%, -2%);
-    }
-
-    100% {
-        transform: scale(1.05) translate(1%, 1%);
-    }
-}
+/* Animations */
 
 header {
     padding: 40px 20px;
@@ -145,6 +121,7 @@ header {
 .feature-card p {
     color: var(--text-dim);
     font-size: 0.85rem;
+    line-height: 1.4;
 }
 
 .btn-main {
@@ -188,7 +165,102 @@ footer {
     letter-spacing: 2px;
 }
 
-/* Animations */
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    .logo-text {
+        font-size: 2.2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .feature-card {
+        padding: 20px 15px;
+        border-radius: 18px;
+    }
+
+    .feature-card i {
+        font-size: 1.5rem;
+    }
+
+    .feature-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+
+    .back-btn {
+        top: 20px;
+        right: 20px;
+        font-size: 1.2rem;
+    }
+
+    /* Sub-page components */
+    .feature-item {
+        flex-direction: column;
+        padding: 20px !important;
+        text-align: center !important;
+    }
+
+    .feature-icon {
+        margin-left: 0 !important;
+        margin-bottom: 15px;
+    }
+
+    .shop-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    .shop-card {
+        padding: 25px !important;
+    }
+
+    .content-card {
+        padding: 25px !important;
+        border-radius: 20px !important;
+    }
+
+    .content-card h2 {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+        /* Single column on very small phones */
+    }
+
+    .logo-text {
+        font-size: 1.8rem;
+    }
+
+    .content-card {
+        padding: 30px 20px;
+    }
+}
+
+/* Animations and entry */
+.staggered-entry {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -199,8 +271,4 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.staggered-entry {
-    animation: fadeIn 0.8s ease-out forwards;
 }
